@@ -25,7 +25,7 @@ def append_data(excel_file, data, out_excel):
                 for i, value in enumerate(data[key], start=3):
                     wss.cell(row=i, column=col).value = value
                     wb.save(out_excel)
-                    print("data is appended to file")
+                    print("data is appended to month column")
 
 
 append_data(excel_file, data,  out_excel)
