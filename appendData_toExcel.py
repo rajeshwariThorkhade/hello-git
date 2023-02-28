@@ -7,6 +7,7 @@ out_excel = 'test2.xlsx'
 
 
 def append_data(excel_file, data, out_excel):
+    """this method is used to append data to a particulae column"""
     wb = openpyxl.load_workbook(excel_file)
     ws = wb.active
     dic = {}
