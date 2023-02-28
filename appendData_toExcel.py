@@ -16,7 +16,6 @@ def append_data(excel_file, data, out_excel):
         dic[mon] = i
         i = i + 1
     print(ws['D3'].value)
-    print("dict is created ")
     for key, col in dic.items():
         print(key, col)
         wb = openpyxl.load_workbook(out_excel)
